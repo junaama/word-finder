@@ -1,6 +1,6 @@
 # word-guesser
 # Project Overview
-
+![word blob](https://media1.giphy.com/media/3o6ozjrPeWQifzyA6Y/giphy.gif?cid=ecf05e475e3af07b49adfba11666ca079a56fea76afecdba&rid=giphy.gif)
 ## Project Links
 
 - [add your github repo link]()
@@ -9,11 +9,13 @@
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-
+##### I am creating a game website where the user will get to guess a word given its synonym, antonym, or definition! I will pull random words and a thesaurus from APIs and use them to display the data.
+##### Reference https://playknoword.com/
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It takes in a word and returns data for the synonyms, antonyms, and definition of that word
+
+The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It will take in a word and return data for the synonyms, antonyms, and definition for that word. I am using it to create a game where the user will be shown the synonym, antonym, definition of a word and have to guess the corresponding word for that synonym/antonym/definition.
+
 API Codesandbox: https://codesandbox.io/s/word-guesser-rzg0i?file=/src/App.js
 
 ```
@@ -65,15 +67,25 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
-
+| Synonym | This will render the synonym game |
+| Antonym | This will render the antonym game |
+| Definition | This will render the definition game |
+| Leaderboard | This will render the leaderboard |
+| Home | This will render the homepage including the rules |
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Form | H | 2hrs| -hrs | -hrs |
+| Working with API | H | 6hrs| -hrs | -hrs |
+| Creating Header including Nav | H | 3hrs | -hrs | -hrs
+| Linking/Routing pages | H | 5hrs | -- | --
+| Creating Synonym Game | H | 5hrs | -- | --
+| Creating Antonym Game | H | 2hrs | -- | --
+| Creating Definiton Game | H | 2hrs | -- | --
+| Creating Leaderboard/Using localStorage | H | 6hrs | -- | --
+| Total | H | 31hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
