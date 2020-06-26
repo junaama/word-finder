@@ -1,12 +1,14 @@
 import React from 'react';
-
+import Leaderboard from './Components/Leaderboard/Leaderboard';
+import ProgressBar from './Components/Synonym/ProgressBar'
 import './App.css';
 
 function App() {
 
   return (
     <div className="App">
-     hi
+     <Leaderboard />
+     <ProgressBar />
     </div>
   );
 }
