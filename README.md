@@ -85,7 +85,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Creating Antonym Game | H | 2hrs | -- | --
 | Creating Definiton Game | H | 2hrs | -- | --
 | Creating Leaderboard/Using localStorage | H | 6hrs | -- | --
-| Total | H | 31hrs| -hrs | -hrs |
+| Responsive Design/Styling | H | 6hrs | --hrs | --hrs
+| Total | H | 37hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
