@@ -41,21 +41,23 @@ fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 Wireframe: https://www.figma.com/file/E2zWjzqUcveDBCwJpcYu4Y/Untitled?node-id=0%3A1
-- [add link to your react architecture]()
+
+React Architecture: https://www.figma.com/file/fOpdgvkEW2ht21QX0tJX06/Untitled?node-id=0%3A1
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
+#### MVP 
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
+- Mobile first responsive design
 - 
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 
-- Add localStorage or firebase for storage to implement user leaderboard
+- Add localStorage for storage to implement user leaderboard
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
