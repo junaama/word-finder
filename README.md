@@ -83,8 +83,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Linking/Routing pages | H | 5hrs | -- | --
 | Creating Synonym Game | H | 5hrs | -- | --
 | Creating Antonym Game | H | 2hrs | -- | --
-| Creating Definiton Game | H | 2hrs | -- | --
-| Creating Leaderboard/Using localStorage | H | 6hrs | -- | --
+| Creating Definiton Game | M | 2hrs | -- | --
+| Creating Leaderboard/Using localStorage | L | 6hrs | -- | --
 | Responsive Design/Styling | H | 6hrs | --hrs | --hrs
 | Total | H | 37hrs| -hrs | -hrs |
 
