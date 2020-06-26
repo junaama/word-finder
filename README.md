@@ -67,17 +67,14 @@ Wireframe: https://www.figma.com/file/E2zWjzqUcveDBCwJpcYu4Y/Untitled?node-id=0%
 
 React Architecture: https://www.figma.com/file/fOpdgvkEW2ht21QX0tJX06/Untitled?node-id=0%3A1
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
+- Fully functionable guessing game
 - Find and use external api 
 - Render data on page 
 - Allow user to navigate through multiple pages
 - Allow user to submit form to determine answer to question
 - Mobile first responsive design
-- 
 
 #### PostMVP 
 
@@ -98,6 +95,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Definition | This will render the definition game |
 | Leaderboard | This will render the leaderboard |
 | Home | This will render the homepage including the rules |
+| Form | This will render the form to submit answers for each game |
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
