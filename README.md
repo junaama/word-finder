@@ -13,10 +13,24 @@ Use this section to describe your final project and perhaps any links to relevan
 ## API
 
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-
+The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It takes in a word and returns data for the synonyms, antonyms, and definition of that word
+API Codesandbox: https://codesandbox.io/s/word-guesser-rzg0i?file=/src/App.js
 
 ```
-{data: {} }
+fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
+      headers: {
+        "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+        "x-rapidapi-key": "4c9c4d7bdbmsh5c0c6dfda6f586dp172c76jsn1f5c896e75d7"
+      }
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        setThesaurus(data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
 ```
 
 
@@ -35,10 +49,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
+- 
 
 #### PostMVP EXAMPLE
 
-- Add localStorage or firebase for storage
+- Add localStorage or firebase for storage to implement user leaderboard
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -54,7 +69,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
