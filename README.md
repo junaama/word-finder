@@ -17,7 +17,7 @@ Use this section to describe your final project and perhaps any links to relevan
 The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It will take in a word and return data for the synonyms, antonyms, and definition for that word. I am using it to create a game where the user will be shown the synonym, antonym, definition of a word and have to guess the corresponding word for that synonym/antonym/definition.
 
 API Codesandbox: https://codesandbox.io/s/word-guesser-rzg0i?file=/src/App.js
-
+### API CALL
 ```
 fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
       headers: {
@@ -34,7 +34,30 @@ fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
         console.log(err);
       });
 ```
-
+### API RESPONSE
+```
+Object {word: "mean", synonyms: Array[18]}
+word: "mean"
+synonyms: Array[18]
+0: "beggarly"
+1: "have in mind"
+2: "think of"
+3: "bastardly"
+4: "intend"
+5: "signify"
+6: "stand for"
+7: "entail"
+8: "imply"
+9: "mingy"
+10: "miserly"
+11: "tight"
+12: "mean value"
+13: "average"
+14: "think"
+15: "base"
+16: "meanspirited"
+17: "hateful"
+```
 
 ## Wireframes
 
@@ -51,7 +74,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 - Find and use external api 
 - Render data on page 
-- Allow user to interact with the page
+- Allow user to navigate through multiple pages
+- Allow user to submit form to determine answer to question
 - Mobile first responsive design
 - 
 
@@ -91,7 +115,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 37hrs| -hrs | -hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+- React Bootstrap for navigation and submit form
 
 ## Code Snippet
 
