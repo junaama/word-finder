@@ -17,46 +17,31 @@ Use this section to describe your final project and perhaps any links to relevan
 The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It will take in a word and return data for the synonyms, antonyms, and definition for that word. I am using it to create a game where the user will be shown the synonym, antonym, definition of a word and have to guess the corresponding word for that synonym/antonym/definition.
 
 API Codesandbox: https://codesandbox.io/s/word-guesser-rzg0i?file=/src/App.js
-### API CALL
-```
-fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
-      headers: {
-        "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
-        "x-rapidapi-key": "4c9c4d7bdbmsh5c0c6dfda6f586dp172c76jsn1f5c896e75d7"
-      }
-    })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        setThesaurus(data);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-```
+
 ### API RESPONSE
 ```
-Object {word: "mean", synonyms: Array[18]}
-word: "mean"
-synonyms: Array[18]
-0: "beggarly"
-1: "have in mind"
-2: "think of"
-3: "bastardly"
-4: "intend"
-5: "signify"
-6: "stand for"
-7: "entail"
-8: "imply"
-9: "mingy"
-10: "miserly"
-11: "tight"
-12: "mean value"
-13: "average"
-14: "think"
-15: "base"
-16: "meanspirited"
-17: "hateful"
+{
+  word: "mean",
+  synonyms: 
+  ["beggarly",
+   "have in mind",
+   "think of",
+   "bastardly",
+   "intend",
+   "signify",
+   "stand for",
+   "entail",
+   "imply",
+   "mingy",
+   "miserly",
+   "tight",
+   "mean value",
+   "average",
+   "think",
+   "base",
+   "meanspirited",
+   "hateful"]
+}
 ```
 
 ## Wireframes
