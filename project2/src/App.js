@@ -1,14 +1,15 @@
-import React from 'react';
-import Leaderboard from './Components/Leaderboard/Leaderboard';
-import ProgressBar from './Components/Synonym/ProgressBar'
+import React, { useState } from 'react';
+import Game from './Components/Synonym/Game'
 import './App.css';
 
 function App() {
+  
+
 
   return (
     <div className="App">
-     <Leaderboard />
-     <ProgressBar />
+     hello
+     <Game />
     </div>
   );
 }
