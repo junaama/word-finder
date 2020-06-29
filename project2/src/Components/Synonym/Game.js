@@ -1,81 +1,94 @@
 import React, { useState, useEffect } from 'react';
 import WordList from './WordList';
-// import { logDOM } from '@testing-library/react';
 
 const Game = () => {
-    const [arrayOfWords, setArrayOfWords] = useState([]);
+    // const [arrayOfWords, setArrayOfWords] = useState([]);
     const randomWords = [];
-    function renderData(apiOne, apiTwo){
-        console.log("synonyms - ", apiTwo)
-        return (
-        <h1>{apiOne}: {apiTwo}</h1>
-        )
-    }
+    // const [objectOfWords, setObjectOfWords] = useState({})
+
+    // function renderData(apiOne, apiTwo){
+    //     console.log("synonyms - ", apiTwo)
+    //     let things = apiTwo.map((item, i)=>{
+    //         return (
+    //             <h1>{item}</h1>
+    //         )
+    //     })
+    // }
     function apiCallOne(){
-        return fetch('https://raw.githubusercontent.com/junaama/word-guesser/master/random-word.json')
+        fetch('https://raw.githubusercontent.com/junaama/word-guesser/master/random-word.json')
             .then(res => res.json())
+            .then(resOne => {
+                let tally = 0;
+                while (tally < 30){
+                    let randomNum = Math.floor(Math.random()* 2982);
+                    let newWord = resOne[randomNum]
+                    randomWords.push(newWord)
+                    tally++;
+                }
+                console.log(randomWords)
+                return randomWords
+                    //  getSynonyms(),
+                    // ,
+                    // renderData(resOne, resTwo)
+                // )
+            });
             
     }
-    function apiCallTwo(){
-        fetch(`https://wordsapiv1.p.rapidapi.com/words/ugly/synonyms`, {
+    // function apiCallTwo(){
+    //     fetch(`https://wordsapiv1.p.rapidapi.com/words/ugly/synonyms`, {
+    //         headers: {
+    //             "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+    //             "x-rapidapi-key": "4c9c4d7bdbmsh5c0c6dfda6f586dp172c76jsn1f5c896e75d7",
+    //         },
+    //     })
+    //         .then(res => {
+    //             return (
+    //             res.json()
+    //             .then((data) => {return data.synonyms})
+    //             )
+    //         })
+    //         .then(resTwo => {
+    //             apiCallOne()
+    //         });
+    // };
+
+
+  function apiCallTwo(){
+      let objectOfWords = {};
+      for(let i = 0; i < randomWords.length; i++){
+          let word = randomWords[i];
+          fetch(`https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`, {
             headers: {
                 "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
                 "x-rapidapi-key": "4c9c4d7bdbmsh5c0c6dfda6f586dp172c76jsn1f5c896e75d7",
             },
         })
-            .then(res => {
-                return (
-                res.json()
-                .then((data) => {return data.synonyms})
-                )
-            })
-            .then(resTwo => {
-                apiCallOne()
-                    .then(resOne => {
-                        // let randomWords = [];
-                        let tally = 0;
-                        while (tally < 30){
-                            let randomNum = Math.floor(Math.random()* 2982);
-                            let newWord = resOne[randomNum]
-                            randomWords.push(newWord)
-                            tally++;
-                        }
-                        console.log(randomWords)
-                        return (
-                            randomWords,
-                            renderData(resOne, resTwo)
-                        )
-                        
-                    });
-            });
-    };
-    /*
-  function apiCallOne(){
-        return fetch('https://raw.githubusercontent.com/junaama/word-guesser/master/random-word.json')
             .then(res => res.json())
-            
+            .then((data) => {
+                // console.log(data)
+                 objectOfWords[word] = data.synonyms;
+                //setObjectOfWords({...objectOfWords, data})
+                //setObjectOfWords({word: data.synonyms})
+                //setArrayOfWords(data)
+                })
+            // })
+      }//close for loop
+      console.log(objectOfWords)
+      return objectOfWords;
     }
-    */
+    
     console.log(randomWords)
 
-    // if(!randomWords[0]){
-    //     console.log("HELLO")
-    // } else {
-    //     for(let i = 0; i < randomWords.length; i++){
-    //     console.log(randomWords[i])
-    //     let word = 'ugly'
-    //     let url = `https://wordsapiv1.p.rapidapi.com/words/${word}/synonyms`;
-    // }
-    // }
     
 
     return (
         <div>
             {/* <WordList listOfWords={listOfWords}/> */}
-            {apiCallTwo()}
+            {/* {apiCallTwo()} */}
             Hi
             {/* {randomWords} */}
-            {/* {thing} */}
+          
+           <WordList />
         </div>
         
     )

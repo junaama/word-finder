@@ -1,7 +1,9 @@
-// import React, {useState} from "react";
-// import Form from "./Form";
+import React, {useState} from "react";
+import Button from "./Form";
 
-// const WordList = (props) => {
+const WordList = (props) => {
+    console.log("inside wordlist - ", props)
+    console.log(props.things)
 // const [thesaurus, setThesaurus] = useState([]);
 //   let list;
 //   let array = [];
@@ -39,11 +41,11 @@
 //     //   .catch((err) => {
 //     //     console.log(err);
 // // handleSubmit={handleSubmit}
-//   return (
-//     <>
-//       {list}
-//       <Form  />
-//     </>
-//   );
-// };
-// export default WordList;
+  return (
+    <>
+      {/* {list} */}
+      <Button  />
+    </>
+  );
+};
+export default WordList;
