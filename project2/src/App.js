@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Definition from './Components/Definition/Definition';
+import Data from './Components/Data/Data';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
      in app
-     <Definition />
+     <Data />
     </div>
   );
 }
