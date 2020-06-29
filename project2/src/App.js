@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Game from './Components/Synonym/Game'
+
 import './App.css';
 
 function App() {
@@ -8,8 +8,7 @@ function App() {
 
   return (
     <div className="App">
-     hello
-     <Game />
+     in app
     </div>
   );
 }
