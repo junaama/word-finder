@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, Redirect, useHistory } from "react-router-dom";
 import Synonym from "../Synonym/Synonym";
 import Antonym from "../Antonym/Antonym";
 import MeansLike from "../MeansLike/MeansLike";
 import Homophone from "../Homophone/Homophone";
 import Rhyme from "../Rhyme/Rhyme";
 import Home from "../Home/Home";
+
 const Main = () => {
   let [input, setInput] = useState("");
   let [data, setData] = useState([]);
   let [constraint, setConstraint] = useState("");
-  let handler = constraint;
+
   let results;
-  let mlResults;
-  let antResults;
-  let synResults;
-  let rhyResults;
-  let homResults;
+  const history = useHistory();
 
   const makeApiCall = async () => {
     const url = `https://api.datamuse.com/words?${constraint}=${input}`;
@@ -27,10 +24,11 @@ const Main = () => {
 
   useEffect(() => {
     makeApiCall();
-  }, [input]);
+  }, [input, constraint]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    history.push(`/${e.target.options.value}`)
   };
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -39,42 +37,42 @@ const Main = () => {
     setConstraint(e.target.value);
   };
 
-  if (constraint) {
-    switch (handler) {
-      case "ml":
-        mlResults = data.map((item, i) => {
-          return <p key={i}>Similar word: {item.word}</p>;
-        });
-        break;
-      case "rel_ant":
-        antResults = data.map((item, i) => {
-          if (!item) {
-            console.log("dne");
-          }
-          return <p key={i}>Antonym: {item.word}</p>;
-        });
-        break;
-      case "rel_syn":
-        synResults = data.map((item, i) => {
-          return <p key={i}>Synonym: {item.word}</p>;
-        });
-        break;
-      case "rel_rhy":
-        rhyResults = data.map((item, i) => {
-          return <p key={i}>Rhyme: {item.word}</p>;
-        });
-        break;
-      case "rel_hom":
-        homResults = data.map((item, i) => {
-          return <p key={i}>Homophone: {item.word}</p>;
-        });
-        break;
-      default:
-        console.log("default");
-    }
-  } else {
-    console.log("DNE");
-  }
+  // if (constraint) {
+  //   switch (handler) {
+  //     case "ml":
+  //       results = data.map((item, i) => {
+  //         return <p key={i}>Similar word: {item.word}</p>;
+  //       });
+  //       break;
+  //     case "rel_ant":
+  //       results = data.map((item, i) => {
+  //         if (!item) {
+  //           console.log("dne");
+  //         }
+  //         return <p key={i}>Antonym: {item.word}</p>;
+  //       });
+  //       break;
+  //     case "rel_syn":
+  //       results = data.map((item, i) => {
+  //         return <p key={i}>Synonym: {item.word}</p>;
+  //       });
+  //       break;
+  //     case "rel_rhy":
+  //       results = data.map((item, i) => {
+  //         return <p key={i}>Rhyme: {item.word}</p>;
+  //       });
+  //       break;
+  //     case "rel_hom":
+  //       results = data.map((item, i) => {
+  //         return <p key={i}>Homophone: {item.word}</p>;
+  //       });
+  //       break;
+  //     default:
+  //       console.log("default");
+  //   }
+  // } else {
+  //   console.log("DNE");
+  // }
   //     return (
   //       <div>
   //         <form onSubmit={handleSubmit}>
@@ -111,16 +109,16 @@ const Main = () => {
           </select>
           <input type="submit" value="Search" />
         </form>
-        Results: {mlResults} {synResults} {antResults} {rhyResults} {homResults}
+        Results: {results}
       </div>
       <main>
         <Switch>
           <Route exact path="/home" exact component={Home} />
-          <Route path="/synonym" render={props => <Synonym {...props} data={data}/>} />
-          <Route path="/antonym" render={props => <Antonym {...props} data={data}/>} />
-          <Route path="/meanslike" render={props => <MeansLike {...props} data={data}/>} />
-          <Route path="/homophone" render={props => <Homophone {...props} data={data}/>} />
-          <Route path="/rhyme" render={props => <Rhyme {...props} data={data}/>}/>
+          <Route path="/rel_syn" render={props => <Synonym {...props} data={data}/>} />
+          <Route path="/rel_ant" render={props => <Antonym {...props} data={data}/>} />
+          <Route path="/ml" render={props => <MeansLike {...props} data={data}/>} />
+          <Route path="/rel_hom" render={props => <Homophone {...props} data={data}/>} />
+          <Route path="/rel_rhy" render={props => <Rhyme {...props} data={data}/>}/>
         </Switch>
       </main>
     </>

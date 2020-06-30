@@ -1,23 +1,17 @@
 import React from "react";
 import { Link, Switch, Route } from 'react-router-dom';
-// import Synonym from '../Synonym/Synonym';
-// import Antonym from '../Antonym/Antonym';
-// import MeansLike from '../MeansLike/MeansLike';
-// import Homophone from '../Homophone/Homophone';
-// import Rhyme from '../Rhyme/Rhyme';
-// import { Nav, NavItem, Link } from "reactstrap";
-// import 'nav.css';
+
 
 const NavBar = () => {
   return (
     <div>
       <nav>
         <Link to="/home" >Home</Link>{" "}
-        <Link to="/synonym" >Synonym</Link>{" "}
-        <Link to="/antonym" >Antonym</Link>{" "}
-        <Link to="/meanslike" >Similar Meaning</Link>{" "}
-        <Link to="/rhyme" >Rhyme</Link>{" "}
-        <Link to="/homophone" >Homophone</Link>
+        <Link to="/rel_syn" >Synonym</Link>{" "}
+        <Link to="/rel_ant" >Antonym</Link>{" "}
+        <Link to="/ml" >Similar Meaning</Link>{" "}
+        <Link to="/rel_rhy" >Rhyme</Link>{" "}
+        <Link to="/rel_hom" >Homophone</Link>
       </nav>
       {/* <main>
             In Main
