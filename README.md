@@ -9,61 +9,58 @@
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-##### I am creating a game website where the user will get to guess a word given its synonym, antonym, or definition! I will pull random words and a thesaurus from APIs and use them to display the data.
-##### Reference https://playknoword.com/
+##### I am creating a website where the user will search for a word/phrase and find synonyms, antonyms, homophones, rhymes and words with a similar meaning.
+##### Reference https://rhymezone.com/
 ## API
 
 
-The API I have chosen is WordsAPI (https://rapidapi.com/dpventures/api/wordsapi). It will take in a word and return data for the synonyms, antonyms, and definition for that word. I am using it to create a game where the user will be shown the synonym, antonym, definition of a word and have to guess the corresponding word for that synonym/antonym/definition.
+The API I have chosen is Datamuse. It will take in a word and return data for the synonyms, antonyms, and other desired constraints for that word. I am using it to create an application where the user will input a word or phrase and select a desired constraint to output a find a word.
 
-API Codesandbox: https://codesandbox.io/s/word-guesser-rzg0i?file=/src/App.js
+The API I have chosen is Datamuse (https://datamuse.com/api/)
 
 ### API RESPONSE
 ```
-{
-  word: "mean",
-  synonyms: 
-  ["beggarly",
-   "have in mind",
-   "think of",
-   "bastardly",
-   "intend",
-   "signify",
-   "stand for",
-   "entail",
-   "imply",
-   "mingy",
-   "miserly",
-   "tight",
-   "mean value",
-   "average",
-   "think",
-   "base",
-   "meanspirited",
-   "hateful"]
-}
+[  
+   {  
+      "word":"tinnitus",
+      "score":57312
+   },
+   {  
+      "word":"ring",
+      "score":50952
+   },
+   {  
+      "word":"cinchonism",
+      "score":50552
+   },
+   {  
+      "word":"acouasm",
+      "score":48952
+   }
+]
 ```
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-Wireframe: https://www.figma.com/file/E2zWjzqUcveDBCwJpcYu4Y/Untitled?node-id=0%3A1
+Mobile Wireframe: https://www.figma.com/file/CkDrin1p8m9ulobSPyNXHS/new-wireframe?node-id=0%3A1
+Desktop Wireframe: https://www.figma.com/file/CkDrin1p8m9ulobSPyNXHS/new-wireframe?node-id=1%3A24
 
 React Architecture: https://www.figma.com/file/kEOP1EzspQDhaDWDfvOuuo/react-arc
 
 
 #### MVP 
-- Fully functionable guessing game
+- Fully functionable word finder
 - Find and use external api 
-- Render data on page 
+- Render data from API on page 
 - Allow user to navigate through multiple pages
-- Allow user to submit form to determine answer to question
+- Allow user to submit form to find synonyms/antonyms/homophones etc
 - Mobile first responsive design
 
 #### PostMVP 
 
-- Add localStorage for storage to implement user leaderboard
+- Call API for each user input so user can toggle between different constraints
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -72,33 +69,32 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
-| Synonym | This will render the synonym game |
-| Antonym | This will render the antonym game |
-| Definition | This will render the definition game |
-| Leaderboard | This will render the leaderboard |
-| Home | This will render the homepage including the rules |
-| Form | This will render the form to submit answers for each game |
+| App | This will render the Header| 
+| Header | This will render the Main and NavBar | 
+| Main | This will render the Home, Synonym, Antonym, MeansLike, Homophone, Rhyme components and handle the Routes/Props of each component | 
+| NavBar | This will render the sticky navigation bar to be displayed across all pages and deal with the Links to each page |
+| Home | This will render the home page and include the form for the user search |
+| Synonym | This will render the results for the words that are synonyms of the user input word |
+| Antonym | This will render the results for the words that are antonyms of the user input word |
+| MeansLike | This will render the results for the words that have a similar meaning to the user input word |
+| Homophone | This will render the results for the words that are homophones of the user input word |
+| Rhyme | This will render the results for the words that rhymes with the user input word |
+
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 2hrs| -hrs | -hrs |
-| Working with API | H | 6hrs| -hrs | -hrs |
-| Creating Header including Nav | H | 3hrs | -hrs | -hrs
-| Linking/Routing pages | H | 5hrs | -- | --
-| Creating Synonym Game | H | 5hrs | -- | --
-| Creating Antonym Game | H | 2hrs | -- | --
-| Creating Definiton Game | M | 2hrs | -- | --
-| Creating Leaderboard/Using localStorage | L | 6hrs | -- | --
-| Responsive Design/Styling | H | 6hrs | --hrs | --hrs
-| Total | H | 37hrs| -hrs | -hrs |
+| Adding Form | H | 2hrs| 6hrs | -hrs |
+| Working with API | H | 6hrs| 20hrs | -hrs |
+| Creating Header including Nav | H | 3hrs | 1hrs | -hrs
+| Linking/Routing pages | H | 5hrs | 2hrs | --
+| Displaying Results to Components | H | 4hrs | -- | --
+| Responsive Design/Styling | H | 8hrs | --hrs | --hrs
+| Total | H | 28hrs| -hrs | -hrs |
 
 ## Additional Libraries
-- React Bootstrap for navigation and submit form
+- Reactstrap for navigation and dropdown
 
 ## Code Snippet
 
