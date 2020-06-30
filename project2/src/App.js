@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-     I Have A Word For That...
+     <h1>I Have A Word For That...</h1>
      <Header />
      <Form />
     </div>
