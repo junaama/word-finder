@@ -4,8 +4,8 @@ import Form from '../Form/Form';
 const Home = () => {
     return (
         <div>
-            In Home
-            {/* <Form /> */}
+            In Home Component
+            
         </div>
     )
 }

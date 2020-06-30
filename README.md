@@ -50,7 +50,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 Wireframe: https://www.figma.com/file/E2zWjzqUcveDBCwJpcYu4Y/Untitled?node-id=0%3A1
 
-React Architecture: https://www.figma.com/file/fOpdgvkEW2ht21QX0tJX06/Untitled?node-id=0%3A1
+React Architecture: https://www.figma.com/file/kEOP1EzspQDhaDWDfvOuuo/react-arc
 
 
 #### MVP 
