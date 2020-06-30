@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div>
             In Home
-            <Form />
+            {/* <Form /> */}
         </div>
     )
 }
