@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/word-finder/static/css/main.eab24d3c.chunk.css",
+    "main.js": "/word-finder/static/js/main.6157e6df.chunk.js",
+    "main.js.map": "/word-finder/static/js/main.6157e6df.chunk.js.map",
+    "runtime-main.js": "/word-finder/static/js/runtime-main.d6590f9c.js",
+    "runtime-main.js.map": "/word-finder/static/js/runtime-main.d6590f9c.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/word-finder/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.6c23cecf.chunk.js": "/word-finder/static/js/2.6c23cecf.chunk.js",
+    "static/js/2.6c23cecf.chunk.js.map": "/word-finder/static/js/2.6c23cecf.chunk.js.map",
+    "index.html": "/word-finder/index.html",
+    "precache-manifest.233ce1f0d7aad20dc9586cd0c493284e.js": "/word-finder/precache-manifest.233ce1f0d7aad20dc9586cd0c493284e.js",
+    "service-worker.js": "/word-finder/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/word-finder/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.eab24d3c.chunk.css.map": "/word-finder/static/css/main.eab24d3c.chunk.css.map",
+    "static/js/2.6c23cecf.chunk.js.LICENSE.txt": "/word-finder/static/js/2.6c23cecf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d6590f9c.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.6c23cecf.chunk.js",
+    "static/css/main.eab24d3c.chunk.css",
+    "static/js/main.6157e6df.chunk.js"
+  ]
+}
