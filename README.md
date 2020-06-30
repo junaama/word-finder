@@ -1,4 +1,4 @@
-# word-guesser
+# word-finder
 # Project Overview
 ![word blob](https://media1.giphy.com/media/3o6ozjrPeWQifzyA6Y/giphy.gif?cid=ecf05e475e3af07b49adfba11666ca079a56fea76afecdba&rid=giphy.gif)
 ## Project Links
