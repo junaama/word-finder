@@ -1,18 +1,35 @@
 import React from "react";
-import { Nav, NavItem, NavLink } from "reactstrap";
+import { Link, Switch, Route } from 'react-router-dom';
+// import Synonym from '../Synonym/Synonym';
+// import Antonym from '../Antonym/Antonym';
+// import MeansLike from '../MeansLike/MeansLike';
+// import Homophone from '../Homophone/Homophone';
+// import Rhyme from '../Rhyme/Rhyme';
+// import { Nav, NavItem, Link } from "reactstrap";
 // import 'nav.css';
 
 const NavBar = () => {
   return (
     <div>
-      <Nav>
-        <NavLink to="/" href="/">Home</NavLink>
-        <NavLink to="/synonym" href="/synonym">Synonym</NavLink>
-        <NavLink to="/antonym" href="/antonym">Antonym</NavLink>{" "}
-        <NavLink to="/definition" href="/meanslike">Similar Meaning</NavLink> 
-        <NavLink to="/rhyme" href="/rhyme">Rhyme</NavLink>
-        <NavLink to="/homophone" href="/homophone">Homophone</NavLink>
-      </Nav>
+      <nav>
+        <Link to="/home" >Home</Link>{" "}
+        <Link to="/synonym" >Synonym</Link>{" "}
+        <Link to="/antonym" >Antonym</Link>{" "}
+        <Link to="/meanslike" >Similar Meaning</Link>{" "}
+        <Link to="/rhyme" >Rhyme</Link>{" "}
+        <Link to="/homophone" >Homophone</Link>
+      </nav>
+      {/* <main>
+            In Main
+            <Switch>
+                <Route path='/' />
+                <Route path='/synonym' component={Synonym}/>
+                <Route path='/antonym' component={Antonym}/>
+                <Route path='/meanslike' component={MeansLike}/>
+                <Route path='/homophone' component={Homophone}/>
+                <Route path='/rhyme' component={Rhyme}/>
+            </Switch>
+        </main> */}
     </div>
   );
 };

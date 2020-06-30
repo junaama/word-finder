@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Synonym from '../Synonym/Synonym';
+import Antonym from '../Antonym/Antonym';
+import MeansLike from '../MeansLike/MeansLike';
+import Homophone from '../Homophone/Homophone';
+import Rhyme from '../Rhyme/Rhyme';
+import {Link, Route} from 'react-router-dom';
 //https://www.carlrippon.com/drop-down-data-binding-with-react-hooks/
 const Form = () => {
   let [input, setInput] = useState("");
@@ -30,15 +36,26 @@ const Form = () => {
     console.log("inside handle select - ", e.target.value);
     setConstraint(e.target.value);
   };
+
   let results;
 
-
-
+  let [mlResults, setMlResults] = useState();
+  let [antResults, setAntResults] = useState();
+  let [synResults, setSynResults] = useState();
+  let [rhyResults, setRhyResults] = useState();
+  let [homResults, setHomResults] = useState();
+/*
+Previous way
+results = data.map((item, i) => {
+console.log(item);
+return <p key={i}>Similar word: {item.word}</p>;
+})
+*/
   if (constraint) {
     switch (handler) {
       case "ml":
         console.log(" in switch - ml");
-        results = data.map((item, i) => {
+        mlResults = data.map((item, i) => {
         console.log(item);
         return <p key={i}>Similar word: {item.word}</p>;
         })
@@ -79,7 +96,6 @@ const Form = () => {
   }
   return (
     <div>
-      Hello in Data - I have a word for that
       <form onSubmit={handleSubmit}>
           <label htmlFor="userWord">Word: </label>
         <input type="text" onChange={handleChange} id="userWord"></input>

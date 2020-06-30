@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from './Components/Form/Form';
-import Header from './Components/Header/Header'
+import Header from './Components/Header/Header';
+
 import './App.css';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
      <h1>I Have A Word For That...</h1>
      <Header />
-     <Form />
+     {/* <Form /> */}
     </div>
   );
 }
