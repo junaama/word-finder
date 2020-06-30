@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Link, Switch, Redirect, useHistory } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Synonym from "../Synonym/Synonym";
 import Antonym from "../Antonym/Antonym";
 import MeansLike from "../MeansLike/MeansLike";
@@ -12,17 +12,18 @@ const Main = () => {
   let [data, setData] = useState([]);
   let [constraint, setConstraint] = useState("");
 
-  let results;
+  // let results;
   const history = useHistory();
 
-  const makeApiCall = async () => {
+
+
+  useEffect(() => {
+      const makeApiCall = async () => {
     const url = `https://api.datamuse.com/words?${constraint}=${input}`;
     const res = await fetch(url);
     const data = await res.json();
     setData(data);
   };
-
-  useEffect(() => {
     makeApiCall();
   }, [input, constraint]);
 
@@ -109,11 +110,11 @@ const Main = () => {
           </select>
           <input type="submit" value="Search" />
         </form>
-        Results: {results}
+        {/* Results: {results} */}
       </div>
       <main>
         <Switch>
-          <Route exact path="/home" exact component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route path="/rel_syn" render={props => <Synonym {...props} data={data}/>} />
           <Route path="/rel_ant" render={props => <Antonym {...props} data={data}/>} />
           <Route path="/ml" render={props => <MeansLike {...props} data={data}/>} />
