@@ -35,16 +35,16 @@ const Main = () => {
   };
   return (
     <>
-      <div>
+      <div className="form-wrapper">
         <form onSubmit={handleSubmit}>
-          {/* <label htmlFor="userWord">Word: </label> */}
           <input type="text" onChange={handleChange} id="user-word" placeholder="Type a word here!"></input>
           <br/>
           <br/>
           <label htmlFor="options" id="options-label">What constraints do you want?</label>
+          <br/>
           <select name="options" id="options" onChange={handleSelectChange}>
             <option value="null">Select an option</option>
-            <option value="ml">Find Meaning Similar To</option>
+            <option value="ml">Find Similar Meaning</option>
             <option value="rel_syn">Find Synonyms</option>
             <option value="rel_ant">Find Antonyms</option>
             <option value="rel_rhy">Find Rhymes</option>
