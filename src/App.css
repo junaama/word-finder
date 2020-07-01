@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
+html {
+  background-color: #5650f4;
+}
 .App {
   text-align: center;
   background-color: #5650f4;
   min-height: 100vh;
- 
   font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
-
+body {
+  background-color: #5650f4;
+}
 h1{
   color: white;
 }

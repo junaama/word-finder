@@ -11,10 +11,13 @@ const Homophone = (props) => {
       results = "(0 Results)";
     }
     return (
+      <>
+    <div className="input-word">{props.input.toUpperCase()} </div>
       <div className="wrapper">
       <div className="title">Homophones</div>
       <div className="results">{results}</div>
     </div>
+    </>
     )
 }
 export default Homophone;

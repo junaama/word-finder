@@ -7,7 +7,7 @@ import Homophone from "../Homophone/Homophone";
 import Rhyme from "../Rhyme/Rhyme";
 import Home from "../Home/Home";
 
-import "./main.css";
+// import "./main.css";
 
 const Main = () => {
   let [input, setInput] = useState("");
@@ -52,7 +52,7 @@ const Main = () => {
   }
   return (
     <>
-      <div className="form-wrapper">
+      {/* <div className="form-wrapper">
         <form onSubmit={handleSubmit}>
           <div className={active ? "user-word-wrapper active" : "user-word-wrapper"}>
             <label htmlFor="user-word" id="user-word-label">
@@ -80,27 +80,30 @@ const Main = () => {
             <option value="rel_hom">Find Homophones</option>
           </select>
           <br />
-          <input type="submit" value="" id="search-button" />
+          <input type="submit" value="" id="search-button" alt="submit button"/>
         </form>
-      </div>
+      </div> */}
+      {/* <Home handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/> */}
+
+      {/* render={(props)=> <Home {...props} handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/>} */}
       <main>
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" render={(props)=> <Home {...props} handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/>}  />
           <Route
             path="/rel_syn"
             render={(props) => <Synonym {...props} data={data} input={input} />}
           />
           <Route
             path="/rel_ant"
-            render={(props) => <Antonym {...props} data={data} />}
+            render={(props) => <Antonym {...props} data={data} input={input}/>}
           />
           <Route
             path="/ml"
-            render={(props) => <MeansLike {...props} data={data} />}
+            render={(props) => <MeansLike {...props} data={data} input={input}/>}
           />
           <Route
             path="/rel_hom"
-            render={(props) => <Homophone {...props} data={data} />}
+            render={(props) => <Homophone {...props} data={data} input={input}/>}
           />
           <Route
             path="/rel_rhy"

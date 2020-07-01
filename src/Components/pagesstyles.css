@@ -1,17 +1,33 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+    background-color: #5650f4;
+    margin: 0 auto;
+    position: relative;
 }
 .title {
     align-self: center;
-    z-index: 10;
+    z-index: 9;
     margin-top: -1rem;
     border: 3px solid white;
     background-color: white;
     border-radius: 15px;
     font-size: 1.5rem;
+    position: absolute;
 }
 .results {
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #d9d7ed;
+    min-height: 100vh;
+}
+.input-word {
+    
+    color: white;
+    padding: 0 0 35px 0;
+    background-color: #5650f4;
+    font-style: italic;
+    
+    font-size: 3rem;
+    font-weight: 400;
 }
