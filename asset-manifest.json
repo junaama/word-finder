@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/word-finder/static/css/main.eab24d3c.chunk.css",
-    "main.js": "/word-finder/static/js/main.6157e6df.chunk.js",
-    "main.js.map": "/word-finder/static/js/main.6157e6df.chunk.js.map",
-    "runtime-main.js": "/word-finder/static/js/runtime-main.d6590f9c.js",
-    "runtime-main.js.map": "/word-finder/static/js/runtime-main.d6590f9c.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/word-finder/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.6c23cecf.chunk.js": "/word-finder/static/js/2.6c23cecf.chunk.js",
-    "static/js/2.6c23cecf.chunk.js.map": "/word-finder/static/js/2.6c23cecf.chunk.js.map",
-    "index.html": "/word-finder/index.html",
-    "precache-manifest.233ce1f0d7aad20dc9586cd0c493284e.js": "/word-finder/precache-manifest.233ce1f0d7aad20dc9586cd0c493284e.js",
-    "service-worker.js": "/word-finder/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/word-finder/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.eab24d3c.chunk.css.map": "/word-finder/static/css/main.eab24d3c.chunk.css.map",
-    "static/js/2.6c23cecf.chunk.js.LICENSE.txt": "/word-finder/static/js/2.6c23cecf.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.8a4d1a16.chunk.css",
+    "main.js": "/static/js/main.a18b874b.chunk.js",
+    "main.js.map": "/static/js/main.a18b874b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.100f9daa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.100f9daa.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.5e70c3bd.chunk.js": "/static/js/2.5e70c3bd.chunk.js",
+    "static/js/2.5e70c3bd.chunk.js.map": "/static/js/2.5e70c3bd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e0351a5fa35b5939659e9229cef35483.js": "/precache-manifest.e0351a5fa35b5939659e9229cef35483.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.8a4d1a16.chunk.css.map": "/static/css/main.8a4d1a16.chunk.css.map",
+    "static/js/2.5e70c3bd.chunk.js.LICENSE.txt": "/static/js/2.5e70c3bd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d6590f9c.js",
+    "static/js/runtime-main.100f9daa.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.6c23cecf.chunk.js",
-    "static/css/main.eab24d3c.chunk.css",
-    "static/js/main.6157e6df.chunk.js"
+    "static/js/2.5e70c3bd.chunk.js",
+    "static/css/main.8a4d1a16.chunk.css",
+    "static/js/main.a18b874b.chunk.js"
   ]
 }
