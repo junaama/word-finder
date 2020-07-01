@@ -22,12 +22,20 @@
     min-height: 100vh;
 }
 .input-word {
-    
     color: white;
     padding: 0 0 35px 0;
     background-color: #5650f4;
     font-style: italic;
-    
     font-size: 3rem;
     font-weight: 400;
+}
+
+@media only screen and (min-width: 768px){
+    .title {
+        font-size: 2rem;
+    }
+    .results {
+        font-size: 1.7rem;
+        padding: 2.4rem;
+    }
 }

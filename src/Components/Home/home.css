@@ -23,7 +23,7 @@ label {
 }
 .user-word-wrapper label {
     position: absolute;
-    font-size: 20px;
+    font-size: 25px;
     transform: translate(0, 16px) scale(1);
     transform-origin: top left;
     transition: all .1s ease-in-out;
@@ -35,8 +35,9 @@ label {
     border-bottom: 1px solid white;
     background-color: #5650f4;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     padding: 16px 0 0 0;
+    text-align: center;
 }
 
 .user-word-wrapper.active label {
@@ -47,6 +48,7 @@ select {
     height: 40px;
     width: 60vw;
     text-align: center;
+    font-size: 15px;
 }
 
 #options-label {
@@ -63,4 +65,11 @@ select {
     height: 50px;
     width: 50px;
     margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px){
+ .form-wrapper {
+     font-size: 30px;
+ }
+  
 }
