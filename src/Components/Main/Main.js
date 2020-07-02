@@ -7,8 +7,6 @@ import Homophone from "../Homophone/Homophone";
 import Rhyme from "../Rhyme/Rhyme";
 import Home from "../Home/Home";
 
-// import "./main.css";
-
 const Main = () => {
   let [input, setInput] = useState("");
   let [data, setData] = useState([]);
@@ -52,40 +50,6 @@ const Main = () => {
   }
   return (
     <>
-      {/* <div className="form-wrapper">
-        <form onSubmit={handleSubmit}>
-          <div className={active ? "user-word-wrapper active" : "user-word-wrapper"}>
-            <label htmlFor="user-word" id="user-word-label">
-              Type a word here!
-            </label>
-            <input type="text" 
-            onChange={handleChange} 
-            id="user-word"
-            onFocus={handleFocus}
-            onBlur={handleBlur}  
-            >
-            </input>
-          </div>
-          <br />
-          <label htmlFor="options" id="options-label">
-            What constraints do you want?
-          </label>
-          <br />
-          <select name="options" id="options" onChange={handleSelectChange}>
-            <option value="null">Select an option</option>
-            <option value="ml">Find Similar Meaning</option>
-            <option value="rel_syn">Find Synonyms</option>
-            <option value="rel_ant">Find Antonyms</option>
-            <option value="rel_rhy">Find Rhymes</option>
-            <option value="rel_hom">Find Homophones</option>
-          </select>
-          <br />
-          <input type="submit" value="" id="search-button" alt="submit button"/>
-        </form>
-      </div> */}
-      {/* <Home handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/> */}
-
-      {/* render={(props)=> <Home {...props} handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/>} */}
       <main>
         <Switch>
           <Route exact path="/" render={(props)=> <Home {...props} handleBlur={handleBlur} handleChange={handleChange} handleFocus={handleFocus} handleSelectChange={handleSelectChange} handleSubmit={handleSubmit} active={active}/>}  />
