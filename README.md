@@ -1,6 +1,6 @@
 # word-finder
 # Project Overview
-![word blob](https://media1.giphy.com/media/3o6ozjrPeWQifzyA6Y/giphy.gif?cid=ecf05e475e3af07b49adfba11666ca079a56fea76afecdba&rid=giphy.gif)
+![word blob](https://media.giphy.com/media/kzs3bNEBO5hhLD6MFw/giphy.gif)
 ## Project Links
 
 - [github repo link](https://github.com/junaama/word-finder)
