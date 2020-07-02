@@ -69,6 +69,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will render the Header| 
 | Header | This will render the Main and NavBar | 
+| Footer | This will render the footer information |
 | Main | This will render the Home, Synonym, Antonym, MeansLike, Homophone, Rhyme components and handle the Routes/Props of each component | 
 | NavBar | This will render the sticky navigation bar to be displayed across all pages and deal with the Links to each page |
 | Home | This will render the home page and include the form for the user search |
@@ -85,11 +86,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 2hrs| 6hrs | 4hrs |
 | Working with API | H | 6hrs| 20hrs | 12hrs |
-| Creating Header including Nav | H | 3hrs | 1hrs | 1hrs
+| Creating Header including Nav/Footer | H | 3hrs | 3hrs | 3hrs
 | Linking/Routing pages | H | 5hrs | 2hrs | 2hrs
 | Displaying Results to Components | H | 4hrs | 2hrs | 2hrs
 | Responsive Design/Styling | H | 8hrs | 12hrs | 12hrs
-| Total | H | 28hrs| 43hrs | 31hrs |
+| Total | H | 28hrs| 45hrs | 33hrs |
 
 
 ## Code Snippet
