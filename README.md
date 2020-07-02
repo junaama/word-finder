@@ -3,12 +3,11 @@
 ![word blob](https://media1.giphy.com/media/3o6ozjrPeWQifzyA6Y/giphy.gif?cid=ecf05e475e3af07b49adfba11666ca079a56fea76afecdba&rid=giphy.gif)
 ## Project Links
 
-- [add your github repo link]()
-- [add your deployment link]()
+- [github repo link](https://github.com/junaama/word-finder)
+- [netlify deployment link](https://heuristic-euler-2d4e61.netlify.app/)
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 ##### I am creating a website where the user will search for a word/phrase and find synonyms, antonyms, homophones, rhymes and words with a similar meaning.
 ##### Reference https://rhymezone.com/
 ## API
@@ -42,7 +41,6 @@ The API I have chosen is Datamuse (https://datamuse.com/api/)
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 Mobile Wireframe: https://www.figma.com/file/CkDrin1p8m9ulobSPyNXHS/new-wireframe?node-id=0%3A1
 Desktop Wireframe: https://www.figma.com/file/CkDrin1p8m9ulobSPyNXHS/new-wireframe?node-id=1%3A24
@@ -85,23 +83,32 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 2hrs| 6hrs | -hrs |
-| Working with API | H | 6hrs| 20hrs | -hrs |
-| Creating Header including Nav | H | 3hrs | 1hrs | -hrs
-| Linking/Routing pages | H | 5hrs | 2hrs | --
-| Displaying Results to Components | H | 4hrs | -- | --
-| Responsive Design/Styling | H | 8hrs | --hrs | --hrs
-| Total | H | 28hrs| -hrs | -hrs |
+| Adding Form | H | 2hrs| 6hrs | 4hrs |
+| Working with API | H | 6hrs| 20hrs | 12hrs |
+| Creating Header including Nav | H | 3hrs | 1hrs | 1hrs
+| Linking/Routing pages | H | 5hrs | 2hrs | 2hrs
+| Displaying Results to Components | H | 4hrs | 2hrs | 2hrs
+| Responsive Design/Styling | H | 8hrs | 12hrs | 12hrs
+| Total | H | 28hrs| 43hrs | 31hrs |
 
-## Additional Libraries
-- Reactstrap for navigation and dropdown
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+Here is the React.js code to create a custom floating label.These functions pair to JSX listeners and CSS transition stylings. I am proud of it because I needed to utilize my knowledge of React/JSX/Javascript and CSS in order to display a label over the text input and then while the user is typing the label floats to the top and changes size.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+
+ const [active, setActive] = useState(false)
+  const handleFocus = (e) => {
+    setActive(true)
+  }
+  const handleBlur = (e) => {
+    let target = e.target;
+    if(target.value){
+      setActive(true)
+      return;
+    }
+    setActive(false);
+  }
+
 ```

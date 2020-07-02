@@ -37,12 +37,10 @@ const Main = () => {
   const [active, setActive] = useState(false)
   const handleFocus = (e) => {
     setActive(true)
-    console.log(e.target)
   }
   const handleBlur = (e) => {
     let target = e.target;
     if(target.value){
-      console.log(target.value)
       setActive(true)
       return;
     }
