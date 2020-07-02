@@ -1,8 +1,10 @@
 import React from 'react';
 import './home.css';
+
 const Home = (props) => {
     
     return (
+
         <div className="form-wrapper">
         <form onSubmit={props.handleSubmit}>
           <div className={props.active ? "user-word-wrapper active" : "user-word-wrapper"}>
@@ -35,6 +37,7 @@ const Home = (props) => {
           <input type="submit" value="" id="search-button" alt="submit button"/>
         </form>
       </div>
+     
     )
 }
 export default Home;

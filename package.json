@@ -1,5 +1,4 @@
 {
-  
   "name": "project2",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +8,9 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "floating-label-react": "^1.0.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-floating-label-input": "^4.3.0",
     "react-router": "^5.2.0",

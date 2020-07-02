@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
+
+.footer {
+    background-color: #5650f4;
+    font-family: 'Playfair Display';
+    border-top: 1px solid #d9d7ed;
+    color: white;
+    
+}
+
+
+.footer img {
+    width: 75px;
+    height: 75px;
+}
